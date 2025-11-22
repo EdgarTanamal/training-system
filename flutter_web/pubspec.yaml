@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  mocktail: ^1.0.0     # untuk unit test yang butuh mocking nanti
+  mocktail: ^1.0.0     
 
 
   http: ^1.1.0
