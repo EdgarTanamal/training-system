@@ -38,16 +38,23 @@
 
 ```bash
 cd api_backend
+python -m venv venv
+source venv/Scripts/activate
 uvicorn main:app --reload
 
 ---
 
-Jenis Testing
+## ▶️ Cara Menjalankan Flutter Web
+cd flutter_web
+flutter run -d chrome
+
+---
+### Jenis Testing
 Jenis Test	Fokus	File Contoh
 Unit Test	Model dan parsing JSON	models/*.dart
 Widget Test	UI dan interaksi	widgets/*.dart
-🔍 Contoh Perilaku yang Diuji
-📌 Model (Unit Test)
+Contoh Perilaku yang Diuji
+Model (Unit Test)
 
 Parsing JSON ke model
 
@@ -55,7 +62,7 @@ Validasi field wajib (id, code, title, name)
 
 Konversi kembali ke JSON
 
-🎨 Widget (Widget Test)
+## Widget (Widget Test)
 
 Menampilkan data dari service
 
@@ -67,8 +74,5 @@ FloatingActionButton tersedia
 
 Tidak terjadi error saat build
 
-🚀 Cara Menjalankan Test
-
-▶️ Cara Menjalankan Flutter Web
-cd flutter_web
-flutter run -d chrome
+## Cara Menjalankan Test
+flutter test
