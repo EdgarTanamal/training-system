@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from api_backend.routers import classes_router, participants_router
 from database import Base, engine
-from routers import participants, classes, registrations
+from routers import registrations
 
 # Buat tabel di DB kalau belum ada
 Base.metadata.create_all(bind=engine)
@@ -25,6 +26,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(participants.router)
-app.include_router(classes.router)
+app.include_router(participants_router.router)
+app.include_router(classes_router.router)
 app.include_router(registrations.router)
