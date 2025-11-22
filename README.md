@@ -42,7 +42,7 @@ uvicorn main:app --reload
 
 ---
 
-## ▶️ Cara Menjalankan Flutter We
+## ▶️ Cara Menjalankan Backend
 
 bash
 Copy code
