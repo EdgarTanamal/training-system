@@ -1,5 +1,5 @@
 
-## 🚀 Fitur Sistem
+## Fitur Sistem
 ### 1. Manajemen Peserta
 - Menambah peserta baru  
 - Menampilkan seluruh peserta  
@@ -41,6 +41,33 @@ cd api_backend
 uvicorn main:app --reload
 
 ---
+
+Jenis Testing
+Jenis Test	Fokus	File Contoh
+Unit Test	Model dan parsing JSON	models/*.dart
+Widget Test	UI dan interaksi	widgets/*.dart
+🔍 Contoh Perilaku yang Diuji
+📌 Model (Unit Test)
+
+Parsing JSON ke model
+
+Validasi field wajib (id, code, title, name)
+
+Konversi kembali ke JSON
+
+🎨 Widget (Widget Test)
+
+Menampilkan data dari service
+
+Menampilkan pesan jika tidak ada data
+
+Tampilan awal widget harus sesuai desain
+
+FloatingActionButton tersedia
+
+Tidak terjadi error saat build
+
+🚀 Cara Menjalankan Test
 
 ▶️ Cara Menjalankan Flutter Web
 cd flutter_web
