@@ -42,9 +42,6 @@ uvicorn main:app --reload
 
 ---
 
-## ▶️ Cara Menjalankan Backend
-
-```bash
-cd api_backend
-uvicorn main:app --reload
-
+▶️ Cara Menjalankan Flutter Web
+cd flutter_web
+flutter run -d chrome
